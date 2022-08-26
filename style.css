@@ -15,7 +15,7 @@ body {
     align-items: center;
     min-height: 100vh;
     /* min-height: 190vh; */
-    background: linear-gradient(180deg, #2e0640, #b91308);
+    background: linear-gradient(180deg, #1b262c, #3282b8);
 }
 .card {
     position: relative;
@@ -151,7 +151,7 @@ body {
 }
 .card .content .details .actionBtn button:hover {
     text-decoration: underline;
-    background: linear-gradient(180deg, #2e0640, #b91308);
+    background: linear-gradient(180deg, #1b262c, #3282b8);
 }
 .card .content .details .data .icono-tecnologia {
     display: flex;
