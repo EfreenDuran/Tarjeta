@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* min-height: 190vh; */
+    background: linear-gradient(180deg, #2e0640, #b91308);
+}
+.card {
+    position: relative;
+    min-width: 300px;
+    min-height: 160px;
+    background: #282623;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.30);
+}
+.card:hover {
+    margin: 10px;
+    margin-top: 50px;
+    height: 550px;
+}
+.imgBx {
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .imgBx {
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 10px;
+} 
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(311px);
+}
+.card:hover .content .details {
+    transition: 0.5s;
+    transform: translateY(10px);
+}
+.card .content .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2em;
+}
+.card .content .details h2 span {
+    color: #c43a30;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+.card .content .details .bio p {
+    font-size: 0.8em;
+    margin-top: 15px;
+    color: #ffff;
+    font-weight: 400;
+}
+.card .content .details .data {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+.card .content .details .data h3 {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.card .content .details .actionBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* gap: 20px; */
+}
+.card .content .details .actionBtn .button-download span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/descargar.png");
+    vertical-align: text-bottom;
+}
+.card .content .details .actionBtn .button-projects span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-github.png");
+    vertical-align: text-bottom;
+}
+.card .content .details .actionBtn button {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: rgb(80, 79, 79);
+    color: #fff;
+    cursor: pointer;
+}
+.card .content .details .actionBtn button:hover {
+    text-decoration: underline;
+    background: linear-gradient(180deg, #2e0640, #b91308);
+}
+.card .content .details .data .icono-tecnologia {
+    display: flex;
+}
+.card .content .details .data .icono-tecnologia p{
+    margin: 5px;
+}
+.card .content .details .data .icono-tecnologia .html{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/html-5-48.png");
+}
+.card .content .details .data .icono-tecnologia .css {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/css3-48.png");
+}
+.card .content .details .data .icono-tecnologia .javascript {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/javascript-48.png");
+}
+.card .content .details .data .icono-tecnologia .github {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/git-48.png");
+}
+.card .content .details .social-media {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.card .content .details .social-media p {
+    margin: 10px;
+}
+.card .content .details .social-media .icon-github {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-github.png");
+}
+.card .content .details .social-media .icon-email {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-gmail.png");
+}
+.card .content .details .social-media .icon-linkedin {
+    width: 34px;
+    height: 34px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-linkedin.png");
+}
+.card .content .details .social-media .icon-twitter{
+    width: 34px;
+    height: 34px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-twitter.png");
+}
+
+.card .content .details .social-media .icon-whatsapp{
+    width: 34px;
+    height: 34px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/logo-whatsapp.png");
+}
